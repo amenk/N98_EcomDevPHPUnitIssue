@@ -1,0 +1,46 @@
+Running both tests
+==================
+
+phpunit.phar --debug --filter N98_EcomDevPHPUnitIssue_Test_Controller_TestController
+PHPUnit 3.7.13 by Sebastian Bergmann.
+
+Configuration read from /home/amenk/Workspace/friedrich-niemann-shop/tests/integration/phpunit.xml
+
+
+Starting test 'N98_EcomDevPHPUnitIssue_Test_Controller_TestController::aAction'.
+.
+Starting test 'N98_EcomDevPHPUnitIssue_Test_Controller_TestController::bAction'.
+F
+
+Time: 5 seconds, Memory: 55.50Mb
+
+There was 1 failure:
+
+1) N98_EcomDevPHPUnitIssue_Test_Controller_TestController::bAction
+event was not really fired
+Failed asserting that null is true.
+
+/home/amenk/Workspace/friedrich-niemann-shop/app/code/local/N98/EcomDevPHPUnitIssue/Test/Controller/TestController.php:30
+/home/amenk/Downloads/phpunit.phar:524
+
+
+FAILURES!
+Tests: 2, Assertions: 4, Failures: 1.
+
+
+Running only bAction
+====================
+
+phpunit.phar --debug --filter N98_EcomDevPHPUnitIssue_Test_Controller_TestController::bAction
+PHPUnit 3.7.13 by Sebastian Bergmann.
+
+Configuration read from /home/amenk/Workspace/friedrich-niemann-shop/tests/integration/phpunit.xml
+
+
+Starting test 'N98_EcomDevPHPUnitIssue_Test_Controller_TestController::bAction'.
+.
+
+Time: 4 seconds, Memory: 36.50Mb
+
+OK (1 test, 4 assertions)
+

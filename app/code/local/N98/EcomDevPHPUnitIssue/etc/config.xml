@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <N98_EcomDevPHPUnitIssue>
+            <version>0.1.0</version>
+        </N98_EcomDevPHPUnitIssue>
+    </modules>
+    <frontend>
+        <events>
+            <controller_action_predispatch_wishlist_index_send>
+                <observers>
+                    <n98_ecomdevphpunitissue>
+                        <class>n98_ecomdevphpunitissue/observer</class>
+                        <type>singleton</type>
+                        <method>controllerActionPredispatchWishlistIndexSend</method>
+                    </n98_ecomdevphpunitissue>
+                </observers>
+            </controller_action_predispatch_wishlist_index_send>
+        </events>
+    </frontend>
+    <global>
+        <models>
+            <n98_ecomdevphpunitissue>
+                <class>N98_EcomDevPHPUnitIssue_Model</class>
+            </n98_ecomdevphpunitissue>
+        </models>
+    </global>
+    <phpunit>
+        <suite>
+            <modules>
+                <N98_EcomDevPHPUnitIssue/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

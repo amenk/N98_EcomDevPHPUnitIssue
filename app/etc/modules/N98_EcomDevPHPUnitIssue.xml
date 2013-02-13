@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <N98_EcomDevPHPUnitIssue>
+            <active>true</active>
+            <codePool>local</codePool>
+        </N98_EcomDevPHPUnitIssue>
+    </modules>
+</config>
